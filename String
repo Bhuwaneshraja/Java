@@ -1,4 +1,4 @@
-1. program
+1. program:
 
 import java.util.*;
 public class main{
@@ -30,3 +30,104 @@ Name: bhuwanesh
 subject: java
 Mark: 88
 *****************************************************************************************************************
+
+2.program:
+
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.ZoneId;
+
+public class Main {
+    public static void main(String[] args) {
+        ZonedDateTime now = ZonedDateTime.now(ZoneId.of("Asia/Kolkata"));
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE, dd-MM-yyyy, hh:mm a");
+        System.out.println("Current Date:"+" "+now.format(formatter));
+    }
+}
+
+OUTPUT:
+Current Date: Wednesday, 25-06-2025, 10:23 AM
+**********************************************************************************************************************
+3.Program:
+import java.util.*;
+public class Studentsdetails{
+    public static void main(String[]args)
+    {   Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the Number of Student :");
+        int n=sc.nextInt();
+        sc.nextLine();
+        for(int i=0;i<n;i++)
+        {
+            
+        System.out.print("Enter the Name:");
+        String a=sc.nextLine();
+        System.out.print("Enter the Subject:");
+        String b=sc.nextLine();
+        System.out.print("Enter the Mark:");
+        int c=sc.nextInt();
+        sc.nextLine();
+        System.out.println("User Name:"+" "+a);
+        System.out.println("User subject:"+" "+b);
+        System.out.println("User Mark:"+" "+c);
+        System.out.println();
+        }
+    }
+}
+        
+OUTPUT:Enter the Subject:java
+Enter the Mark:33
+User Name: bhuwanesh
+User subject: java
+User Mark: 33
+
+Enter the Name:rafi
+Enter the Subject:java
+Enter the Mark:3
+User Name: rafi
+User subject: java
+User Mark: 3*
+
+Enter the Name:saba
+Enter the Subject:java
+Enter the Mark:77
+User Name: saba
+User subject: java
+User Mark: 77
+***********************************************************************************************
+4.Program:
+import java.util.*;
+public class main{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int n=sc.nextInt();
+     
+     for(int i=1;i<n;i++)
+     {
+         for(int j=1;j<n;j++)
+         {
+             if(i==1||j==0||i==n-1||j==n-1)
+             {
+             System.out.print("*");
+             }
+             else
+             {
+                 System.out.print(" ");
+             }
+         }
+    System.out.println();
+     }
+    }
+}
+OUTPUT:
+Enter the number:
+5
+****
+*  *
+*  *
+****
+*************************************************************************************************
+
+
