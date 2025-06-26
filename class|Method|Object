@@ -1,0 +1,89 @@
+//import java.util.*;
+class Application
+{
+    String name="";
+    int age;
+    int mark;
+    void details()
+    {
+        System.out.println("name: "+name);
+        System.out.println("age: "+age);
+        System.out.println("mark: "+mark);
+    }
+}
+public class Main
+{
+    public static void main (String[]args)
+    {
+        Application student1=new Application();
+        student1.name="bhuwanesh";
+        student1.age=20;
+        student1.mark=43;
+        student1.details();
+    }
+}
+
+OUTPUT:
+*******************************************************************************************************
+import java.util.*;
+import java.util.Scanner;
+class Application
+{
+    String name="";
+    int age;
+    int mark;
+    void details()
+    {
+        System.out.println("Name : "+name);
+        System.out.println("age: "+age);
+        System.out.println("mark: "+mark);
+    }
+}
+public class Main
+{
+    public static void main (String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the Number of Student :");
+        int n=sc.nextInt();
+        sc.nextLine();
+        
+        for(int i=0;i<n;i++)
+        {
+        Application student1=new Application();
+        System.out.print("Enter the Name:");
+        student1.name=sc.nextLine();
+        System.out.print("Enter the age:");
+        student1.age=sc.nextInt();
+        System.out.print("Enter the Mark:");
+        student1.mark=sc.nextInt();
+        student1.details();
+        }
+    }
+}
+****************************************************************************************************************
+import java.util.*;               //ASCII valuw program
+import java.util.Scanner;
+public class Main{
+    public static void main(String[]args)
+    {
+     Scanner sc=new Scanner(System.in);
+     String s=sc.nextLine();
+     for(int i=0;i<s.length();i++)
+     {
+         char ch=s.charAt(i);
+         if(ch>65&&ch<=90)
+         {
+            System.out.print(Character.toLowerCase(ch));
+         }
+         else if(ch>97&&ch<=122)
+         {
+             System.out.print(Character.toUpperCase(ch));
+         }
+         else
+         {
+             System.out.println(ch);
+         }
+     }
+    }
+}
