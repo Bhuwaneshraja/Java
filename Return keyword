@@ -1,0 +1,26 @@
+public class Mat{
+    int sum(int a,int b){
+        int c=a+b;
+        return c;           
+    }
+
+    public static void main(String []args){
+        Mat obj1=new Mat();
+        int total=obj1.sum(23,1);
+        System.out.println(total);
+
+    }
+}
+**********************************************************************
+public class Mat{
+    String getname(){
+        return "Bhuwanesh";           
+    }
+
+    public static void main(String []args){
+        Mat obj1=new Mat();
+        String myname =obj1.getname();
+        System.out.println(myname);
+
+    }
+}
