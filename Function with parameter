@@ -1,0 +1,50 @@
+ public class Store{
+    void getsoap(int money){
+        System.out.println(money);
+        System.out.println("soap purchase");
+        
+    }
+    void getpowder(int money){
+        System.out.println(money);
+        System.out.println("powder purchase");
+        
+    }
+    void getcoco(int money){
+        System.out.println(money);
+        System.out.println("coco purchase");
+        
+    }
+    public static void main(String args[]){
+        Store obj1=new Store();
+        obj1.getsoap(20);
+        obj1.getpowder(10);
+        obj1.getcoco(22);
+    }
+}
+***************************************************************************************
+public class Mat{                   // add,sub,div,mul
+    void sum(int a,int b){
+         System.out.println("Addition: ");
+        System.out.println(a+b);
+        
+    }
+    void sum1(int a,int b){
+        System.out.println("Subtraction: ");
+        System.out.println(a-b);
+    }
+    void sum2(int a,int b){
+        System.out.println("Multiplication: ");
+        System.out.println(a*b);
+    }
+    void sum3(int a,int b){
+        System.out.println("Division: ");
+        System.out.println(a/b);
+    }
+    public static void main(String []args){
+        Mat obj1=new Mat();
+        obj1.sum(23,1);
+        obj1.sum1(40,20);
+        obj1.sum2(2,5);
+        obj1.sum3(4,2);
+    }
+}
