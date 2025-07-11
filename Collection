@@ -1,0 +1,100 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[]args)
+
+	//syntax
+	{
+		LinkedList<String>names=new LinkedList<>();
+
+		//add the function
+		names.add("muruga");
+		names.add("shiva");
+		names.add("ganesha");
+
+		//add at specific index
+		names.add(1,"elango");
+		
+		//add first/add last
+		names.addFirst("tharun");
+		names.addLast("venkat");
+
+		//add all another list
+		LinkedList<String>extras=new LinkedList<>();
+		extras.add("siva");
+		extras.add("pawan");
+		names.addAll(extras);
+
+		//get elements
+		System.out.println("First: "+names.getFirst());
+		System.out.println("Last: "+names.getLast());
+		System.out.println("element at index 3 : "+names.get(3));
+
+		//set an elements
+		names.set(2,"loki");
+
+		//contains check
+		System.out.println("contains harshan "+names.contains("harsham"));
+
+		//size
+		System.out.println("size: "+names.size());
+
+		//index of/last index
+		System.out.println("index of pawan: "+names.indexOf("pawan"));
+		names.add("pawan");
+		System.out.println("last index of pawan: "+names.lastIndexOf("pawan"));
+
+		//remove by index/value
+		names.remove(0);
+		names.remove("elango");
+
+		//remove first/remove last
+		names.removeFirst();
+		names.removeLast();
+
+		//remove addAll
+		names.removeAll(extras);
+
+		//peek/poll
+		System.out.println("peek"+names.peek());
+
+		//stack-stylec ops(push&pop)
+		names.push("kumar");
+		System.out.println("After push: "+names);
+		names.pop();
+		System.out.println("After pop: "+names);
+
+		//iterate using for each
+		System.out.println("\nUsing for-each: ");
+		for(String name:names)
+		{
+			System.out.println(names);
+		}
+
+		//iterator using iterator
+		System.out.println("\nUsing iterator: ");
+		Iterator<String>itr=names.iterator();
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next());
+		}
+
+		//convert to Array
+		Object[]nameArray=names.toArray();
+		System.out.println("converted to Array: "+Arrays.toString(nameArray));
+
+		//sublist
+		if(names.size() >= 2)
+		{
+			List<String>sub=names.subList(0, 2);
+			System.out.println("sublist: "+sub);
+		}
+
+		//clear all
+		names.clear();
+		System.out.println("After clearing: "+names);
+		
+		//Isempty check
+        System.out.println("Is empty ?: "+names.isEmpty());
+	}
+}
